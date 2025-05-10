@@ -2,7 +2,7 @@
 
 Welcome to my personal **developer portfolio website** — built to showcase my projects, experience, and technical skills in modern web development.
 
-Live Preview: [🔗 View Website](https://your-portfolio-link.com)
+Live Preview: [🔗 View Website](https://hadiqa-portfolio.vercel.app/)
 
 ---
 
