@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section className="space-y-6 text-blacktext dark:text-white">
       <header>
-        <h2 className="text-2xl font-bold text-mint-700 dark:text-riptide-300">
+        <h2 className="text-xl md:text-2xl font-bold text-mint-700 dark:text-riptide-300">
           About Me
         </h2>
         <div className="w-16 h-1 bg-mint-400 dark:bg-riptide-400 rounded-full mt-2"></div>

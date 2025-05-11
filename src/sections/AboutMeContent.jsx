@@ -30,7 +30,7 @@ const AboutMeContent = () => {
         />
       </div>
 
-      <div className="pt-4 px-8">{renderSection()}</div>
+      <div className="">{renderSection()}</div>
     </article>
   );
 };

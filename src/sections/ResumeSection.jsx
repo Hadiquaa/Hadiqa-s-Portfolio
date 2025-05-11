@@ -43,11 +43,11 @@ const Resume = () => {
   ];
 
   return (
-    <section id="resume" className=" px-6 max-w-5xl mx-auto scroll-mt-20">
+    <section id="resume" className=" max-w-5xl mx-auto scroll-mt-20">
       {/* Header */}
-      <div className="flex justify-between items-center mb-10">
+      <div className="flex  justify-between items-center mb-10">
         <div>
-          <h2 className="text-2xl font-bold text-blacktext dark:text-white">
+          <h2 className="text-xl md:text-2xl font-bold text-mint-700 dark:text-white">
             Resume
           </h2>
           <div className="w-16 h-1 bg-mint-400 dark:bg-riptide-400 rounded-full mt-2"></div>
@@ -56,7 +56,7 @@ const Resume = () => {
         <a
           href="/Hadiqa_Taiba_Resume.pdf"
           download
-          className="flex items-center gap-2 px-4 py-2 text-sm font-semibold bg-mint-500 text-white rounded-full shadow hover:bg-mint-400 transition"
+          className="flex items-center gap-2 md:px-4 py-1 px-2 text-sm font-semibold bg-mint-500 text-white rounded-full shadow hover:bg-mint-400 transition"
         >
           <FaDownload /> Download PDF
         </a>

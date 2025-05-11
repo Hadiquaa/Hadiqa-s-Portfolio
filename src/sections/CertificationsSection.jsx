@@ -43,7 +43,7 @@ const CertificationsSection = () => {
   return (
     <section className="">
       <div>
-        <h2 className="text-xl font-bold text-mint-700 dark:text-riptide-300 ">
+        <h2 className="text-xl md:text-2xl font-bold text-mint-700 dark:text-riptide-300 ">
           Certifications
         </h2>
         <div className="h-1 w-10 bg-mint-500 dark:bg-riptide-400 rounded-full mt-2 mb-6 "></div>
