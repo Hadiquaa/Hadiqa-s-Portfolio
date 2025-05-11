@@ -55,7 +55,7 @@ const AboutMeSidebar = () => {
           <h1 className="text-2xl md:text-3xl font-bold text-blacktext dark:text-white tracking-tight">
             Hadiqua Taiba
           </h1>
-          <span className="text-sm md:text-md font-medium px-3 py-1 rounded-full bg-mint-400 dark:bg-mint-700 text-white border border-transparent shadow-sm">
+          <span className="text-xs text-center sm:text-sm md:text-md font-medium px-2 py-1 rounded-full bg-mint-400 dark:bg-mint-700 text-white border border-transparent shadow-sm">
             Front End Developer
           </span>
         </div>

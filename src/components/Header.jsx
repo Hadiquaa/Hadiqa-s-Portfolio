@@ -19,7 +19,7 @@ const Header = () => {
     {id: "experience", label: "Experience" , href: "#experience"},
     {id: "projects", label: "Projects" , href: "#projects"},
     {id: "about-me", label: "About Me" , href: "#about", route:"/about"},
-    {id: "blogs", label: "Blogs" , href: "#blogs"}
+    
   ]
 
   const filteredNavItems =
@@ -65,24 +65,41 @@ const Header = () => {
 
 
   const renderNavItem = (item) => {
-    const classes = `px-2 py-2 max-md:mx-auto max-md:w-full max-md:px-6 max-md:py-2 transition-all dark:text-zinc-300 text-blacktext hover:text-mint-300 dark:hover:text-mint-300 italic ${activeLink === item.id ? "text-mint-400 dark:text-mint-400 font-bold " : ""}`;
+    const isActive = activeLink === item.id;
+    const baseClasses =
+      "px-2 py-2 max-md:mx-auto max-md:w-full max-md:px-6 max-md:py-2 transition-all italic hover:text-mint-300 dark:hover:text-mint-300";
+    const activeClasses = isActive
+      ? "text-mint-400 dark:text-mint-400 font-bold"
+      : "text-blacktext dark:text-zinc-300";
+    const classes = `${baseClasses} ${activeClasses}`;
+
     return item.route ? (
-      <Link key={item.id} to={item.route} onClick={() => handleNavClick(item.id)} className={classes}>
+      <Link
+        key={item.id}
+        to={item.route}
+        onClick={() => handleNavClick(item.id)}
+        className={classes}
+      >
         {item.label}
       </Link>
     ) : (
-      <a key={item.id} href={item.href} onClick={()=> handleNavClick(item.id)} className={classes}>
+      <a
+        key={item.id}
+        href={item.href}
+        onClick={() => handleNavClick(item.id)}
+        className={classes}
+      >
         {item.label}
       </a>
     );
-  }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full p-3 font-medium text-blacktext dark:text-zinc-300 dark:bg-[#0E0E11]/80 dark:border-b-1 dark:border-zinc-800 bg-white/90 backdrop-blur-xs dark:backdrop-blur-xs max-md:z-50 max-md:px-0 transition-all duration-500 ease-in-out">
       <div className="relative mx-auto flex max-w-7xl flex-row items-center justify-between max-xl:px-6">
-        <div className='w-44 sm:w-56 md:w-72 lg:w-80 xl:w-[22rem] cursor-pointer'>
+        <div className="w-44 sm:w-56 md:w-72 lg:w-80 xl:w-[22rem] cursor-pointer">
           <a href="/">
-            <Logo className="w-full h-auto"/>
+            <Logo className="w-full h-auto" />
           </a>
         </div>
         <nav className="hidden md:flex justify-center gap-6 w-full max-md:gap-3 max-md:py-6">
@@ -117,16 +134,23 @@ const Header = () => {
               {darkMode ? <MdLightMode /> : <BsMoonStars />}
             </button>
             {/* Here will be the hamburger menu */}
-              <button className='md:hidden text-3xl' onClick={()=>setIsOpen(!isOpen)}>
-                {isOpen ? <HiOutlineX className='hover:text-red-400'/> : <HiOutlineMenu/>}
-              </button>
+            <button
+              className="md:hidden text-3xl"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? (
+                <HiOutlineX className="hover:text-red-400" />
+              ) : (
+                <HiOutlineMenu />
+              )}
+            </button>
           </div>
         </div>
       </div>
       {/* Mobile Nav */}
       {isOpen && (
-        <div >
-          {navItems.map(renderNavItem)}
+        <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-[#0E0E11] border-t border-zinc-800 flex flex-col items-center gap-4 py-4 shadow-lg z-40 transition-all duration-300">
+          {filteredNavItems.map(renderNavItem)}
         </div>
       )}
     </header>
