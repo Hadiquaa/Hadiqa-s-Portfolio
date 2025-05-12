@@ -8,7 +8,7 @@ const ContactMe = () => {
         <div className="mx-auto max-w-7xl px-8 py-12 max-sm:py-12">
           <div className="flex items-center justify-between max-md:flex-col max-md:gap-8 max-md:text-center">
             <div className="max-w-lg">
-              <h2 className="font-extrabold text-4xl max-xl:text-3xl max-md:text-3xl  dark:text-white text-blacktext">
+              <h2 className="font-extrabold text-3xl max-xl:text-2xl max-md:text-3xl  dark:text-white text-blacktext">
                 Ready to take your idea to the next level?{" "}
                 <b className="bg-gradient-to-r from-riptide-500 to-mint-400 dark:from-riptide-500 dark:to-mint-500 text-transparent bg-clip-text">
                   Let's work together.
@@ -43,7 +43,7 @@ const ContactMe = () => {
                     py-5 
                     max-xl:px-6 
                     max-sm:px-3 
-                    text-2xl 
+                    text-xl 
                     max-xl:text-xl 
                     max-sm:text-lg 
                     hover:bg-gradient-to-l 
@@ -52,6 +52,7 @@ const ContactMe = () => {
                     to-mint-200 
                     dark:from-riptide-500 
                     dark:to-mint-500
+                    
                   "
                 >
                   <FaRegPaperPlane size={14} />

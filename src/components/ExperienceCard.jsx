@@ -3,7 +3,7 @@ import React from 'react'
 const ExperienceCard = (props) => {
     const {key,role,company,time,summary}=props;
   return (
-    <li>
+    <li key={key}>
         <article>
             <div className='flex flex-col gap-2  text-zinc-00 dark:text-zinc-300 md:col-span-3'>
                 <div className="relative mx-12 pb-12 grid md:grid-cols-5 md:gap-10 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-['']">

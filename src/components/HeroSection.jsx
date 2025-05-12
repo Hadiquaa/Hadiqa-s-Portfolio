@@ -19,7 +19,7 @@ const HeroSection = () => {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <a href="/about" className="flex h-full w-full"></a>
+                <a href="#" className="flex h-full w-full"></a>
               </div>
             </div>
           </div>
