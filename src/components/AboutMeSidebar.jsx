@@ -27,7 +27,7 @@ const AboutMeSidebar = () => {
       icon: <IoLocationOutline />,
     },
     {
-      id: "linkedin",
+      id: "social",
       name: "LinkedIn",
       value: "https://www.linkedin.com/in/hadiqa-taiba-319602169/",
       icon: <IoLogoLinkedin />,
@@ -72,6 +72,7 @@ const AboutMeSidebar = () => {
           />
         </button>
       </div>
+
       <div
         className={`sidebar-contacts mt-6 ${
           showContacts ? "block" : "hidden"
@@ -91,18 +92,28 @@ const AboutMeSidebar = () => {
                 <p className="font-semibold uppercase text-blacktext dark:text-white">
                   {item.name}
                 </p>
-                <a
-                  href={
-                    item.id === "email"
-                      ? `mailto:${item.value}`
-                      : item.id === "phone"
-                      ? `tel:${item.value}`
-                      : undefined
-                  }
-                  className="text-mint-700 dark:text-riptide-300 hover:underline break-all truncate block max-w-[10rem] sm:max-w-[14rem] md:max-w-full"
-                >
-                  {item.value}
-                </a>
+                {["email", "phone", "social"].includes(item.id) ? (
+                  <a
+                    href={
+                      item.id === "email"
+                        ? `mailto:${item.value}`
+                        : item.id === "phone"
+                        ? `tel:${item.value}`
+                        : item.value // LinkedIn
+                    }
+                    target={item.id === "social" ? "_blank" : undefined}
+                    rel={
+                      item.id === "social" ? "noopener noreferrer" : undefined
+                    }
+                    className="text-mint-700 dark:text-riptide-300 hover:underline break-all truncate block max-w-[10rem] sm:max-w-[14rem] md:max-w-full"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <p className="text-mint-700 dark:text-riptide-300 break-all truncate block max-w-[10rem] sm:max-w-[14rem] md:max-w-full">
+                    {item.value}
+                  </p>
+                )}
               </div>
             </li>
           ))}
