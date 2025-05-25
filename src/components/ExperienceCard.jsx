@@ -6,7 +6,7 @@ const ExperienceCard = (props) => {
     <li key={key}>
         <article>
             <div className='flex flex-col gap-2  text-zinc-00 dark:text-zinc-300 md:col-span-3'>
-                <div className="relative mx-12 pb-12 grid md:grid-cols-5 md:gap-10 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-['']">
+                <div className="relative mx-12 pb-12 grid md:grid-cols-5 md:gap-10 before:absolute before:left-[-36px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-['']">
                     <div className='pb-12 md:col-span-2'>
                         <div className='sticky top-0'>
                             <span className='absolute -left-[45px] text-5xl text-mint-400 rounded-full drop-shadow-[0px_0px_8px_rgba(0,_255,_94,_1)]'>•</span>

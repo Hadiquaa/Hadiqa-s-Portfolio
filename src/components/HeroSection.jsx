@@ -36,7 +36,7 @@ const HeroSection = () => {
           </h1>
           <p className="mb-0 text-lg font-semibold leading-8 text-blacktext dark:text-gray-200 max-xl:text-base max-sm:text-center">
             <span className="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent   dark:from-riptide-300 dark:to-mint-200">
-              FrontEnd Developer
+              Full Stack Developer
             </span>{" "}
             —crafting sleek, high-performance interfaces fueled by code,
             creativity, and coffee. 🚀☕

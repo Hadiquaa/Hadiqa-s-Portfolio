@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import Hadiqa from "../assets/images/Hadiqa.jpg";
 import { FaChevronDown } from "react-icons/fa";
-import { IoIosPhonePortrait } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io";
 
 const AboutMeSidebar = () => {
   const contacts = [
-    {
-      id: "phone",
-      name: "phone",
-      value: "+1(647)785 5937",
-      icon: <IoIosPhonePortrait />,
-    },
+    
     {
       id: "email",
       name: "email",
@@ -92,14 +86,12 @@ const AboutMeSidebar = () => {
                 <p className="font-semibold uppercase text-blacktext dark:text-white">
                   {item.name}
                 </p>
-                {["email", "phone", "social"].includes(item.id) ? (
+                {["email",  "social"].includes(item.id) ? (
                   <a
                     href={
                       item.id === "email"
                         ? `mailto:${item.value}`
-                        : item.id === "phone"
-                        ? `tel:${item.value}`
-                        : item.value // LinkedIn
+                        :  item.value // LinkedIn
                     }
                     target={item.id === "social" ? "_blank" : undefined}
                     rel={

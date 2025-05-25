@@ -14,7 +14,7 @@ const AboutMeNav = ({ activeSection, setActiveSection }) => {
         <li key={item.id} className="flex-1 text-center sm:flex-none">
           <button
             onClick={() => setActiveSection(item.id)}
-            className={`w-full truncate rounded-md px-2 py-1 font-medium transition-colors duration-200 ${
+            className={`w-full truncate rounded-md px-2 py-1 font-medium md:text-lg  transition-colors duration-200 ${
               activeSection === item.id
                 ? "text-riptide-600 dark:text-riptide-300"
                 : "text-mint-500 hover:text-riptide-700 dark:text-riptide-500 dark:hover:text-riptide-400"

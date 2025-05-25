@@ -1,12 +1,11 @@
 import React from "react";
-import { FaCat, FaGlobe, FaMusic, FaKeyboard } from "react-icons/fa";
+import { FaCat, FaGlobe, FaMusic, FaKeyboard, FaBookOpen } from "react-icons/fa";
 
 const funFacts = [
   {
     icon: <FaCat className="text-2xl text-mint-500 dark:text-riptide-400" />,
     title: "Cat Person",
-    description:
-      "I have a cat named Muffy, and he can play fetch!",
+    description: "I have a cat named Muffy, and he can play fetch!",
   },
   {
     icon: <FaGlobe className="text-2xl text-mint-500 dark:text-riptide-400" />,
@@ -19,6 +18,13 @@ const funFacts = [
     title: "Music Lover",
     description:
       "My playlists are filled with lo-fi, Bollywood, and everything in between.",
+  },
+  {
+    icon: (
+      <FaBookOpen className="text-2xl text-mint-500 dark:text-riptide-400" />
+    ),
+    title: "Book Lover",
+    description: "I love reading books in my free time , my favorite so far is 'A Thousand Splendid Suns'",
   },
   {
     icon: (

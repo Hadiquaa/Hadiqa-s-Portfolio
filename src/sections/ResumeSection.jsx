@@ -18,25 +18,33 @@ const Resume = () => {
   const experienceList = [
     {
       id: "1",
-      role: "Web Development Fellowship",
-      company: "Web Dev Open",
-      time: "Oct 2024 - Jan 2025",
+      role: "Full Stack Developer (Contract)",
+      company: "Techsphere Solutions LLC – Frisco, TX, USA (Remote)",
+      time: "March 2024 - Sept 2024",
       summary:
-        "Completed a project-based fellowship where I built responsive, accessible web applications using modern front-end technologies like HTML, CSS, JavaScript, and React. Collaborated with mentors in weekly sprints, improved my skills in UI design and Git workflows, and gained real-world experience bringing digital ideas to life.",
+        "Built full-stack modules for a healthcare platform using React.js, Node.js, and MongoDB, with JWT-based authentication and third-party APIs (Stripe, Twilio).Collaborated with U.S. teams in Agile sprints and deployed scalable features to AWS EC2.Optimized database queries and React components, boosting app performance by 30%.",
     },
     {
       id: "2",
-      role: "Web Developer Intern",
+      role: "Freelance Frontend Developer",
+      company: "Freelance",
+      time: "Jan 2024 - Present",
+      summary:
+        "Designed and delivered responsive React.js websites for 5+ clients, enhancing UI/UX and boosting engagement.Built scalable, mobile-first interfaces using Tailwind CSS and Bootstrap with full API integration.Improved project delivery speed by 30% through clean component architecture and optimized performance.",
+    },
+    {
+      id: "3",
+      role: "Junior Web Developer",
       company: "Brainwave Matrix Solution",
-      time: "June 2024 - Sept 2024",
+      time: "Feb 2023 - Dec 2023",
       summary:
         "Built responsive interfaces with React and Tailwind, integrating AI-powered features for enhanced UX. Contributed to modular component design, performance optimization, and agile team collaboration to ship scalable web solutions.",
     },
     {
-      id: "3",
+      id: "4",
       role: "Software Intern",
       company: "Rourkela Steel Plant",
-      time: "Nov 2023 - April 2024",
+      time: "March 2022 - August 2022",
       summary:
         "Worked on modernizing legacy .NET infrastructure by migrating internal tools to React. Built an interactive dashboard using React, Chart.js, and REST APIs to display real-time plant metrics, improving data accessibility and operational efficiency.",
     },
@@ -54,7 +62,7 @@ const Resume = () => {
         </div>
 
         <a
-          href="/Hadiqa_Taiba_Resume.pdf"
+          href="/Hadiqua_Taiba_Resume.pdf"
           download
           className="flex items-center gap-2 md:px-4 py-1 px-2 text-sm font-semibold bg-mint-500 text-white rounded-full shadow hover:bg-mint-400 transition"
         >
