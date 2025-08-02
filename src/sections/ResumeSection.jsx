@@ -2,6 +2,7 @@ import React from "react";
 import { FaGraduationCap, FaDownload } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa6";
 import ExperienceCard from "../components/ExperienceCard";
+import { experienceList } from "../assets/helper";
 
 const Resume = () => {
   const educationList = [
@@ -12,41 +13,6 @@ const Resume = () => {
       time: "2018 - 2022",
       summary:
         "Graduated with a GPA of 8.13, focused on web development, data structures, and software engineering.",
-    },
-  ];
-
-  const experienceList = [
-    {
-      id: "1",
-      role: "Full Stack Developer (Contract)",
-      company: "Techsphere Solutions LLC – Frisco, TX, USA (Remote)",
-      time: "March 2024 - Sept 2024",
-      summary:
-        "Built full-stack modules for a healthcare platform using React.js, Node.js, and MongoDB, with JWT-based authentication and third-party APIs (Stripe, Twilio).Collaborated with U.S. teams in Agile sprints and deployed scalable features to AWS EC2.Optimized database queries and React components, boosting app performance by 30%.",
-    },
-    {
-      id: "2",
-      role: "Freelance Frontend Developer",
-      company: "Freelance",
-      time: "Jan 2024 - Present",
-      summary:
-        "Designed and delivered responsive React.js websites for 5+ clients, enhancing UI/UX and boosting engagement.Built scalable, mobile-first interfaces using Tailwind CSS and Bootstrap with full API integration.Improved project delivery speed by 30% through clean component architecture and optimized performance.",
-    },
-    {
-      id: "3",
-      role: "Junior Web Developer",
-      company: "Brainwave Matrix Solution",
-      time: "Feb 2023 - Dec 2023",
-      summary:
-        "Built responsive interfaces with React and Tailwind, integrating AI-powered features for enhanced UX. Contributed to modular component design, performance optimization, and agile team collaboration to ship scalable web solutions.",
-    },
-    {
-      id: "4",
-      role: "Software Intern",
-      company: "Rourkela Steel Plant",
-      time: "March 2022 - August 2022",
-      summary:
-        "Worked on modernizing legacy .NET infrastructure by migrating internal tools to React. Built an interactive dashboard using React, Chart.js, and REST APIs to display real-time plant metrics, improving data accessibility and operational efficiency.",
     },
   ];
 
@@ -62,7 +28,7 @@ const Resume = () => {
         </div>
 
         <a
-          href="/Hadiqua_Taiba_Resume.pdf"
+          href="/Hadiqua-CV-2025.pdf"
           download
           className="flex items-center gap-2 md:px-4 py-1 px-2 text-sm font-semibold bg-mint-500 text-white rounded-full shadow hover:bg-mint-400 transition"
         >
