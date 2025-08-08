@@ -50,7 +50,7 @@ const AboutMeSidebar = () => {
             Hadiqua Taiba
           </h1>
           <span className="text-xs text-center sm:text-sm md:text-md font-medium px-2 py-1 rounded-full bg-mint-400 dark:bg-mint-700 text-white border border-transparent shadow-sm">
-            Front End Developer
+            Full Stack Developer
           </span>
         </div>
 
