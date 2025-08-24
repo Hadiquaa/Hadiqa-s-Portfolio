@@ -1,7 +1,7 @@
 export const experienceList = [
   {
     id: "1",
-    role: "Software Engineer Intern",
+    role: "Software Engineer",
     company: "Walmart, Bentonville, AR",
     time: "Oct 2024 - April 2025",
     summary:
